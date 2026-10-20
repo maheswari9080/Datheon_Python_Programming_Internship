@@ -29,3 +29,20 @@ Thumbs.db
 task3_file_organizer/logs/*.log
 task3_file_organizer/sandbox_test/
 *.tmp
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Coverage and profiling
+.coverage
+*.prof
+
+# Windows-specific
+desktop.ini

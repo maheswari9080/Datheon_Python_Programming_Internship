@@ -9,6 +9,11 @@ Datheon Python Internship — Four Independent Python Applications + Universal W
 
 ---
 
+## License
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
+
+---
+
 ## Suite Purpose & Overview
 This repository contains four completely decoupled, production-grade Python applications demonstrating core software engineering capabilities: algorithmic problem-solving, financial data processing, filesystem automation, and deterministic conversational AI. All projects are unified through an accessible developer portal dashboard (`index.html`).
 
