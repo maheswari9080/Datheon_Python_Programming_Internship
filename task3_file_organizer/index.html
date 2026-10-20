@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated File Organizer | Datheon Python Internship Task 03</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand">
+        <div class="brand-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">03</div>
+        <div class="brand-title">Automated File Organizer</div>
+      </a>
+      <span class="brand-badge" style="color:#f59e0b; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.12);">Task 03</span>
+      <a href="../index.html" class="btn-github">&larr; Return to Dashboard</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 30px; padding-bottom: 60px;">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> <span>/</span> <strong>Task 03: File Organizer</strong>
+    </div>
+
+    <section class="info-section">
+      <h1 class="section-title">Task 03: Automated File Organizer &amp; Cleanup Utility</h1>
+      <p class="section-description" style="margin-bottom: 24px;">
+        A safe filesystem automation utility that scans directories and organizes files into 8 semantic categories 
+        using <code>pathlib</code> and <code>shutil</code> with dry-run simulation and path safety validation.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>8 Semantic Categories</h4>
+          <p>Classifies Documents, Images, Videos, Audio, Archives, Code, Spreadsheets, Presentations, and Other.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Filesystem Safety Guard</h4>
+          <p>Rejects filesystem root drives (<code>C:\</code>, <code>/</code>), system directories, and the project repository itself.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Collision Management</h4>
+          <p>Configurable collision resolution: <code>rename</code> (appends <code>_1</code>), <code>skip</code>, or <code>overwrite</code>.</p>
+        </div>
+        <div class="feature-box">
+          <h4>12 / 12 Unittests</h4>
+          <p>All tests execute in temporary sandboxes, verifying dry-run neutrality and collision handling safely.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Run Instructions -->
+    <section class="info-section">
+      <h2 class="section-title">Terminal Launch Command</h2>
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">Bash / PowerShell</span>
+          <button class="btn-copy" data-target="cmd-t3">Copy</button>
+        </div>
+        <div class="terminal-body" id="cmd-t3"># Dry-Run Simulation (Recommended First)
+python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads" --dry-run
+
+# Live Execution with Confirmation
+python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads"
+
+# Non-Interactive Automation
+python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads" --collision rename --non-interactive
+
+# Run Automated Test Suite
+python -m unittest discover -s task3_file_organizer/tests -p "test_*.py" -v</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="../index.html">&larr; Return to Universal Dashboard</a> | &copy; 2026 Datheon Python Internship</p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

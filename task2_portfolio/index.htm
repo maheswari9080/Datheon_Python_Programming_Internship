@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Portfolio Tracker | Datheon Python Internship Task 02</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand">
+        <div class="brand-icon" style="background: linear-gradient(135deg, #10b981, #059669);">02</div>
+        <div class="brand-title">Stock Portfolio Tracker</div>
+      </a>
+      <span class="brand-badge" style="color:#10b981; border-color:rgba(16,185,129,0.3); background:rgba(16,185,129,0.12);">Task 02</span>
+      <a href="../index.html" class="btn-github">&larr; Return to Dashboard</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 30px; padding-bottom: 60px;">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> <span>/</span> <strong>Task 02: Stock Portfolio</strong>
+    </div>
+
+    <section class="info-section">
+      <h1 class="section-title">Task 02: Stock Portfolio Performance Tracker</h1>
+      <p class="section-description" style="margin-bottom: 24px;">
+        A terminal-based investment portfolio valuation tool computing cost basis, market value, 
+        and gain/loss metrics with RFC 4180 CSV export and provider-independent price handling.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>S&P 500 Constituent Lookup</h4>
+          <p>Validates tickers against 503 constituents in <code>data/constituents.csv</code> with corporate names and GICS sectors.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Provider-Independent Pricing</h4>
+          <p>Supports offline reference quotes (<code>sample_prices.json</code>), manual price inputs, and optional live quotes via <code>yfinance</code>.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Partial Valuation Transparency</h4>
+          <p>Strictly excludes unquoted holdings from total market valuations, preventing misleading under-reporting.</p>
+        </div>
+        <div class="feature-box">
+          <h4>14 / 14 Unittests</h4>
+          <p>Fully validated across financial formulas, multi-holding totals, edge cases, and CSV schema persistence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valuation Formulas -->
+    <section class="info-section">
+      <h2 class="section-title">Mathematical Valuation Engine</h2>
+      <div class="feature-grid" style="margin-top: 16px;">
+        <div class="feature-box">
+          <h4>Invested Capital</h4>
+          <p><code>Cost = Buy_Price &times; Quantity</code></p>
+        </div>
+        <div class="feature-box">
+          <h4>Current Market Value</h4>
+          <p><code>Value = Current_Price &times; Quantity</code></p>
+        </div>
+        <div class="feature-box">
+          <h4>Absolute Return</h4>
+          <p><code>Gain/Loss = (Current_Price - Buy_Price) &times; Quantity</code></p>
+        </div>
+        <div class="feature-box">
+          <h4>Percentage Return</h4>
+          <p><code>% = ((Current_Price - Buy_Price) / Buy_Price) &times; 100</code></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Run Instructions -->
+    <section class="info-section">
+      <h2 class="section-title">Terminal Launch Command</h2>
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">Bash / PowerShell</span>
+          <button class="btn-copy" data-target="cmd-t2">Copy</button>
+        </div>
+        <div class="terminal-body" id="cmd-t2"># Interactive Menu Mode
+python task2_portfolio/portfolio.py
+
+# Automated Demo with Sample Holdings
+python task2_portfolio/portfolio.py --demo
+
+# Run Automated Test Suite
+python -m unittest discover -s task2_portfolio/tests -p "test_*.py" -v</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="../index.html">&larr; Return to Universal Dashboard</a> | &copy; 2026 Datheon Python Internship</p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

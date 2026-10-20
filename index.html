@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datheon Python Internship Project Suite - Four independent, production-grade Python applications featuring word games, stock valuation, file automation, and rule-based conversational AI.">
+  <title>Python Internship Project Suite | Universal Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">Py</div>
+        <div>
+          <div class="brand-title">Python Internship Suite</div>
+        </div>
+      </a>
+      <span class="brand-badge">Datheon Internship</span>
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#datasets" class="nav-link">Datasets</a></li>
+        <li><a href="#verification" class="nav-link">Verification</a></li>
+        <li><a href="#run" class="nav-link">How to Run</a></li>
+      </ul>
+      <a href="https://github.com/maheswari9080/Python-Programming-Internship-Datheon" target="_blank" rel="noopener noreferrer" class="btn-github">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub Repo
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">Production-Ready Python Engineering</div>
+      <h1 class="hero-title">Python Internship Project Suite</h1>
+      <p class="hero-subtitle">
+        Four independent Python applications demonstrating problem-solving, financial data processing, 
+        filesystem automation, and deterministic conversational AI.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Explore Projects</a>
+        <a href="#verification" class="btn-secondary">View Test Report</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- Four Projects Grid -->
+    <section id="projects">
+      <div class="section-heading">
+        <h2 class="section-title">Independent Python Applications</h2>
+        <p class="section-description">
+          Each project is completely decoupled with its own CLI entry point, data loader, automated tests, and documentation.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 01 -->
+        <article class="project-card" style="--card-accent: #0ea5e9;">
+          <div>
+            <div class="card-number">Project 01</div>
+            <h3 class="card-title">Hangman Game</h3>
+            <p class="card-description">
+              Modular console word guessing game featuring a 6-mistake ceiling, 7 ASCII gallows stages, 
+              immunity against duplicate/invalid guesses, and automated candidate filtering.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python 3.11</span>
+              <span class="tag">random</span>
+              <span class="tag">ASCII Graphics</span>
+              <span class="tag">18 Tests (100%)</span>
+            </div>
+          </div>
+          <a href="task1_hangman/index.html" class="card-action">View Project Details &rarr;</a>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project-card" style="--card-accent: #10b981;">
+          <div>
+            <div class="card-number">Project 02</div>
+            <h3 class="card-title">Portfolio Tracker</h3>
+            <p class="card-description">
+              Multi-position investment tracking tool calculating invested capital, market value, 
+              and percentage returns. Features provider-independent quotes and RFC 4180 CSV persistence.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python 3.11</span>
+              <span class="tag">csv</span>
+              <span class="tag">S&P 500 Data</span>
+              <span class="tag">14 Tests (100%)</span>
+            </div>
+          </div>
+          <a href="task2_portfolio/index.html" class="card-action">View Project Details &rarr;</a>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project-card" style="--card-accent: #f59e0b;">
+          <div>
+            <div class="card-number">Project 03</div>
+            <h3 class="card-title">File Organizer</h3>
+            <p class="card-description">
+              Safe filesystem automation utility classifying downloads into 8 semantic categories. 
+              Features dry-run simulation, collision renaming, path safety guard, and audit logging.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python 3.11</span>
+              <span class="tag">shutil</span>
+              <span class="tag">pathlib</span>
+              <span class="tag">12 Tests (100%)</span>
+            </div>
+          </div>
+          <a href="task3_file_organizer/index.html" class="card-action">View Project Details &rarr;</a>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project-card" style="--card-accent: #8b5cf6;">
+          <div>
+            <div class="card-number">Project 04</div>
+            <h3 class="card-title">FAQ Chatbot</h3>
+            <p class="card-description">
+              Deterministic rule-based conversational assistant answering student questions from verified FAQ data. 
+              Features token scoring, question priority, and non-fabrication fallbacks.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python 3.11</span>
+              <span class="tag">json</span>
+              <span class="tag">re</span>
+              <span class="tag">14 Tests (100%)</span>
+            </div>
+          </div>
+          <a href="task4_chatbot/index.html" class="card-action">View Project Details &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="info-section">
+      <div class="section-heading">
+        <h2 class="section-title">System Architecture</h2>
+        <p class="section-description">
+          Engineered for complete component decoupling. The static dashboard provides unified navigation while Python apps run directly in terminal environments.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Zero External Dependency</h4>
+          <p>All core applications operate 100% on the standard Python 3.10+ library, eliminating brittle third-party dependencies.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Offline-First Resilience</h4>
+          <p>Every data-driven component includes structured offline fallback datasets, guaranteeing execution in air-gapped environments.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Strict Filesystem Guardrails</h4>
+          <p>File operations strictly validate target directories, disallowing accidental execution on system roots or repository source code.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Truthful Data Reporting</h4>
+          <p>Explicit price sources prevent confusion between real-time quotes, manual inputs, and offline reference feeds.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section id="datasets" class="info-section">
+      <div class="section-heading">
+        <h2 class="section-title">Verified Datasets & Sources</h2>
+        <p class="section-description">
+          All external datasets were downloaded directly from canonical sources and verified for schema compliance.
+        </p>
+      </div>
+      <table class="audit-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Canonical URL</th>
+            <th>Local Storage</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01 Hangman</strong></td>
+            <td><a href="https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt" target="_blank" style="color:var(--primary);">Google 10,000 English Words</a></td>
+            <td><code>task1_hangman/data/words.txt</code></td>
+            <td><span class="status-badge verified">Verified (8,076 candidates)</span></td>
+          </tr>
+          <tr>
+            <td><strong>02 Portfolio</strong></td>
+            <td><a href="https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv" target="_blank" style="color:var(--primary);">S&P 500 Constituents CSV</a></td>
+            <td><code>task2_portfolio/data/constituents.csv</code></td>
+            <td><span class="status-badge verified">Verified (503 constituents)</span></td>
+          </tr>
+          <tr>
+            <td><strong>03 File Organizer</strong></td>
+            <td><a href="https://docs.python.org/3/library/shutil.html" target="_blank" style="color:var(--primary);">Python shutil Documentation</a></td>
+            <td>Self-contained taxonomy</td>
+            <td><span class="status-badge verified">Verified (8 Categories)</span></td>
+          </tr>
+          <tr>
+            <td><strong>04 Chatbot</strong></td>
+            <td><a href="https://www.datheon.in/datasets/sample_faq.json" target="_blank" style="color:var(--primary);">Datheon Sample FAQ JSON</a></td>
+            <td><code>task4_chatbot/data/sample_faq.json</code></td>
+            <td><span class="status-badge verified">Verified (3 FAQs, 5 Greetings)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- How to Run Section -->
+    <section id="run" class="info-section">
+      <div class="section-heading">
+        <h2 class="section-title">Terminal Execution Guide</h2>
+        <p class="section-description">
+          Execute any project directly from your terminal using Python 3.10+.
+        </p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">Project Execution Commands</span>
+          <button class="btn-copy" data-target="cmd-run">Copy</button>
+        </div>
+        <div class="terminal-body" id="cmd-run"># Task 01: Hangman Console Game
+python task1_hangman/hangman.py
+
+# Task 02: Stock Portfolio Tracker (Demo Mode)
+python task2_portfolio/portfolio.py --demo
+
+# Task 03: File Organizer (Safe Dry-Run Simulation)
+python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads" --dry-run
+
+# Task 04: Rule-Based FAQ Chatbot
+python task4_chatbot/chatbot.py</div>
+      </div>
+    </section>
+
+    <!-- Verification Section -->
+    <section id="verification" class="info-section">
+      <div class="section-heading">
+        <h2 class="section-title">Verification & Quality Assurance</h2>
+        <p class="section-description">
+          58 total automated unit tests executed across all 4 independent projects with a 100% pass rate.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-box" style="text-align: center;">
+          <h4 style="font-size: 2rem; color: var(--success);">18 / 18</h4>
+          <p><strong>Task 1 Hangman</strong><br>Words loading, ASCII stages, duplicate guess protection, win/loss state.</p>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <h4 style="font-size: 2rem; color: var(--success);">14 / 14</h4>
+          <p><strong>Task 2 Portfolio</strong><br>Return formulas, unpriced tickers, RFC 4180 CSV export, disclaimer.</p>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <h4 style="font-size: 2rem; color: var(--success);">12 / 12</h4>
+          <p><strong>Task 3 Organizer</strong><br>Path safety, collision renaming, dry-run neutrality, recursion prevention.</p>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <h4 style="font-size: 2rem; color: var(--success);">14 / 14</h4>
+          <p><strong>Task 4 Chatbot</strong><br>Schema adapter, intent classification, token scoring, non-fabrication fallback.</p>
+        </div>
+      </div>
+
+      <div class="terminal-card" style="margin-top: 24px;">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">Run Entire Test Suite</span>
+          <button class="btn-copy" data-target="cmd-test">Copy</button>
+        </div>
+        <div class="terminal-body" id="cmd-test">python -m unittest discover -s task1_hangman/tests -p "test_*.py" -v
+python -m unittest discover -s task2_portfolio/tests -p "test_*.py" -v
+python -m unittest discover -s task3_file_organizer/tests -p "test_*.py" -v
+python -m unittest discover -s task4_chatbot/tests -p "test_*.py" -v</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="README.md">Master README</a></li>
+        <li><a href="docs/ARCHITECTURE.md">Architecture Spec</a></li>
+        <li><a href="docs/TEST_REPORT.md">QA Test Report</a></li>
+        <li><a href="docs/DATASET_SOURCES.md">Dataset Provenance</a></li>
+        <li><a href="https://github.com/maheswari9080/Python-Programming-Internship-Datheon" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+      </ul>
+      <p>&copy; 2026 Datheon Python Internship Project Suite. Built with pure Python and semantic web standards.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
