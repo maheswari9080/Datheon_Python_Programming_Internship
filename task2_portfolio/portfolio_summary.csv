@@ -1,0 +1,6 @@
+timestamp,ticker,company,quantity,buy_price,current_price,invested_value,market_value,gain_loss,gain_loss_percent,price_source
+2026-10-20T03:49:05Z,AAPL,Apple Inc.,15,185.50,228.50,2782.50,3427.50,645.00,23.18%,Offline Sample Feed
+2026-10-20T03:49:05Z,MSFT,Microsoft,8,390.00,418.25,3120.00,3346.00,226.00,7.24%,Offline Sample Feed
+2026-10-20T03:49:05Z,NVDA,Nvidia,25,115.00,138.90,2875.00,3472.50,597.50,20.78%,Offline Sample Feed
+2026-10-20T03:49:05Z,AMZN,Amazon,12,175.20,186.40,2102.40,2236.80,134.40,6.39%,Offline Sample Feed
+2026-10-20T03:49:05Z,TSLA,"Tesla, Inc.",10,240.00,220.15,2400.00,2201.50,-198.50,-8.27%,Offline Sample Feed
