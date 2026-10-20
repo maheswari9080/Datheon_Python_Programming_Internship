@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="meshBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="meshAmber" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="meshViolet" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.94"/>
+    </linearGradient>
+    <linearGradient id="pythonBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+
+    <filter id="premiumShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.07"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <filter id="floatShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <filter id="glowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Base -->
+  <rect width="1200" height="520" rx="24" fill="url(#bgGrad)"/>
+  <rect width="1200" height="520" rx="24" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M 0 24 Q 0 0 24 0 L 1176 0 Q 1200 0 1200 24 L 1200 7 L 0 7 Z" fill="url(#pythonBlueGrad)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="160" cy="140" r="160" fill="url(#meshBlue)" filter="url(#glowBlur)"/>
+  <circle cx="1060" cy="420" r="190" fill="url(#meshAmber)" filter="url(#glowBlur)"/>
+  <circle cx="680" cy="490" r="140" fill="url(#meshViolet)" filter="url(#glowBlur)"/>
+
+  <!-- Subtle Designer Background Grid -->
+  <g stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,6" opacity="0.35">
+    <line x1="70" y1="0" x2="70" y2="520"/>
+    <line x1="240" y1="0" x2="240" y2="520"/>
+    <line x1="640" y1="0" x2="640" y2="520"/>
+    <line x1="1040" y1="0" x2="1040" y2="520"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="430" x2="1200" y2="430"/>
+  </g>
+
+  <!-- ================= LEFT HERO COLUMN ================= -->
+  <g transform="translate(65, 52)">
+
+    <!-- Datheon Master Badge Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="36" rx="18" fill="url(#pillGrad)" stroke="#BFDBFE" stroke-width="1.5"/>
+      <circle cx="18" cy="18" r="6" fill="#2563EB"/>
+      <circle cx="18" cy="18" r="10" fill="#3B82F6" fill-opacity="0.25"/>
+      <text x="36" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12" font-weight="700" fill="#1E40AF" letter-spacing="1">DATHEON INTERNSHIP</text>
+      <circle cx="230" cy="18" r="8" fill="#FFFFFF"/>
+      <path d="M 227 18 L 229 20 L 234 15" stroke="#16A34A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 56)">
+      <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="40" font-weight="800" fill="#0F172A" letter-spacing="-1">
+        Python Internship
+      </text>
+      <text x="0" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="40" font-weight="800" fill="#2563EB" letter-spacing="-1">
+        Project Suite
+      </text>
+    </g>
+
+    <!-- Subtitle (2 Lines for breathing room) -->
+    <g transform="translate(0, 168)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15" font-weight="400" fill="#475569">
+        Four decoupled production-grade applications
+      </text>
+      <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15" font-weight="400" fill="#475569">
+        unified through an accessible web portal dashboard.
+      </text>
+    </g>
+
+    <!-- 4 High-Craft Value Cards -->
+    <g transform="translate(0, 225)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)" filter="url(#floatShadow)">
+        <rect width="242" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <rect width="5" height="50" rx="2.5" fill="#10B981"/>
+        <circle cx="28" cy="25" r="13" fill="#DCFCE7"/>
+        <path d="M 23 25 L 27 29 L 34 21" stroke="#15803D" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <text x="50" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Zero Dependencies</text>
+        <text x="50" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">100% Python Standard Lib</text>
+      </g>
+      <!-- Card 2 -->
+      <g transform="translate(254, 0)" filter="url(#floatShadow)">
+        <rect width="242" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <rect width="5" height="50" rx="2.5" fill="#0284C7"/>
+        <circle cx="28" cy="25" r="13" fill="#E0F2FE"/>
+        <path d="M 23 25 L 27 29 L 34 21" stroke="#0369A1" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <text x="50" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">58 Unit Tests (100%)</text>
+        <text x="50" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Automated QA Verification</text>
+      </g>
+      <!-- Card 3 -->
+      <g transform="translate(0, 62)" filter="url(#floatShadow)">
+        <rect width="242" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <rect width="5" height="50" rx="2.5" fill="#F59E0B"/>
+        <circle cx="28" cy="25" r="13" fill="#FEF3C7"/>
+        <path d="M 22 25 L 34 25 M 28 19 L 34 25 L 28 31" stroke="#B45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="50" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Air-Gapped Resilient</text>
+        <text x="50" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Offline Fallback Datasets</text>
+      </g>
+      <!-- Card 4 -->
+      <g transform="translate(254, 62)" filter="url(#floatShadow)">
+        <rect width="242" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <rect width="5" height="50" rx="2.5" fill="#8B5CF6"/>
+        <circle cx="28" cy="25" r="13" fill="#EDE9FE"/>
+        <circle cx="28" cy="25" r="6" stroke="#6D28D9" stroke-width="2" fill="none"/>
+        <text x="50" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Universal Web Portal</text>
+        <text x="50" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Zero-Server Client UI</text>
+      </g>
+    </g>
+
+    <!-- Bottom App Navigation Tabs -->
+    <g transform="translate(0, 365)">
+      <g transform="translate(0, 0)">
+        <rect width="116" height="30" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="16" cy="15" r="4" fill="#0284C7"/>
+        <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#334155">01 HANGMAN</text>
+      </g>
+      <g transform="translate(126, 0)">
+        <rect width="122" height="30" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="16" cy="15" r="4" fill="#10B981"/>
+        <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#334155">02 PORTFOLIO</text>
+      </g>
+      <g transform="translate(258, 0)">
+        <rect width="118" height="30" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="16" cy="15" r="4" fill="#F59E0B"/>
+        <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#334155">03 ORGANIZER</text>
+      </g>
+      <g transform="translate(386, 0)">
+        <rect width="110" height="30" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="16" cy="15" r="4" fill="#8B5CF6"/>
+        <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#334155">04 CHATBOT</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: CODE EDITOR & FLOATING HUD ================= -->
+  <g transform="translate(645, 48)">
+
+    <!-- Main Code Card Container -->
+    <g filter="url(#premiumShadow)">
+      <rect width="490" height="320" rx="16" fill="url(#glassCard)" stroke="#E2E8F0" stroke-width="1.5"/>
+
+      <!-- Window Title Bar with Tab Header -->
+      <path d="M 0 16 Q 0 0 16 0 L 474 0 Q 490 0 490 16 L 490 44 L 0 44 Z" fill="#F8FAFC"/>
+      <line x1="0" y1="44" x2="490" y2="44" stroke="#E2E8F0" stroke-width="1"/>
+
+      <!-- macOS Traffic Lights -->
+      <circle cx="22" cy="22" r="6" fill="#EF4444"/>
+      <circle cx="22" cy="21" r="5" fill="#F87171" fill-opacity="0.4"/>
+      <circle cx="40" cy="22" r="6" fill="#F59E0B"/>
+      <circle cx="40" cy="21" r="5" fill="#FBBF24" fill-opacity="0.4"/>
+      <circle cx="58" cy="22" r="6" fill="#10B981"/>
+      <circle cx="58" cy="21" r="5" fill="#34D399" fill-opacity="0.4"/>
+
+      <!-- Active Tab -->
+      <g transform="translate(85, 8)">
+        <rect width="150" height="36" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="16" cy="18" r="4" fill="#3B82F6"/>
+        <text x="28" y="22" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#1E293B">internship.py</text>
+      </g>
+
+      <!-- Python 3.11 Badge in Titlebar -->
+      <g transform="translate(380, 10)">
+        <rect width="94" height="24" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+        <text x="12" y="16" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#2563EB">Python 3.11</text>
+      </g>
+
+      <!-- Code Editor Body -->
+      <g transform="translate(20, 68)" font-family="'JetBrains Mono', Consolas, monospace" font-size="12">
+        <!-- Line Numbers Column -->
+        <g fill="#94A3B8" font-size="11">
+          <text x="0" y="0">01</text>
+          <text x="0" y="23">02</text>
+          <text x="0" y="46">03</text>
+          <text x="0" y="69">04</text>
+          <text x="0" y="92">05</text>
+          <text x="0" y="115">06</text>
+          <text x="0" y="138">07</text>
+          <text x="0" y="161">08</text>
+          <text x="0" y="184">09</text>
+        </g>
+        <!-- Code Content with Rich Syntax -->
+        <g transform="translate(26, 0)">
+          <!-- L1 -->
+          <text y="0">
+            <tspan fill="#2563EB" font-weight="bold">from</tspan>
+            <tspan fill="#0F172A"> task1_hangman.game_engine </tspan>
+            <tspan fill="#2563EB" font-weight="bold">import</tspan>
+            <tspan fill="#0F172A"> GameEngine</tspan>
+          </text>
+          <!-- L2 -->
+          <text y="23">
+            <tspan fill="#2563EB" font-weight="bold">from</tspan>
+            <tspan fill="#0F172A"> task2_portfolio.calculator </tspan>
+            <tspan fill="#2563EB" font-weight="bold">import</tspan>
+            <tspan fill="#0F172A"> Portfolio</tspan>
+          </text>
+          <!-- L3 -->
+          <text y="46">
+            <tspan fill="#2563EB" font-weight="bold">from</tspan>
+            <tspan fill="#0F172A"> task3_organizer.safety </tspan>
+            <tspan fill="#2563EB" font-weight="bold">import</tspan>
+            <tspan fill="#0F172A"> SafetyGuard</tspan>
+          </text>
+          <!-- L4 -->
+          <text y="69">
+            <tspan fill="#2563EB" font-weight="bold">from</tspan>
+            <tspan fill="#0F172A"> task4_chatbot.classifier </tspan>
+            <tspan fill="#2563EB" font-weight="bold">import</tspan>
+            <tspan fill="#0F172A"> IntentClassifier</tspan>
+          </text>
+          <!-- L5 -->
+          <text y="92">
+            <tspan fill="#94A3B8"># Deterministic QA test execution across all modules</tspan>
+          </text>
+          <!-- L6 -->
+          <text y="115">
+            <tspan fill="#0F172A">test_harness = </tspan>
+            <tspan fill="#7C3AED" font-weight="bold">MasterQA</tspan>
+            <tspan fill="#0F172A">.load_all_suites()</tspan>
+          </text>
+          <!-- L7 -->
+          <text y="138">
+            <tspan fill="#0F172A">results = test_harness.</tspan>
+            <tspan fill="#0284C7" font-weight="bold">run_verification</tspan>
+            <tspan fill="#0F172A">()</tspan>
+          </text>
+          <!-- L8 -->
+          <text y="161">
+            <tspan fill="#2563EB" font-weight="bold">assert</tspan>
+            <tspan fill="#0F172A"> results.passed == </tspan>
+            <tspan fill="#D97706" font-weight="bold">58</tspan>
+            <tspan fill="#0F172A"> </tspan>
+            <tspan fill="#2563EB" font-weight="bold">and</tspan>
+            <tspan fill="#0F172A"> results.failed == </tspan>
+            <tspan fill="#10B981" font-weight="bold">0</tspan>
+          </text>
+          <!-- L9 -->
+          <text y="184">
+            <tspan fill="#15803D" font-weight="bold">print</tspan>
+            <tspan fill="#0F172A">(</tspan>
+            <tspan fill="#059669">f&quot;[SUCCESS] All 58 Passed ({results.duration}s)&quot;</tspan>
+            <tspan fill="#0F172A">)</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Floating Master Terminal Pill Card (Overlap bottom) -->
+    <g transform="translate(25, 275)" filter="url(#premiumShadow)">
+      <rect width="440" height="110" rx="14" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <!-- Header -->
+      <circle cx="18" cy="18" r="4" fill="#EF4444"/>
+      <circle cx="30" cy="18" r="4" fill="#F59E0B"/>
+      <circle cx="42" cy="18" r="4" fill="#10B981"/>
+      <text x="60" y="22" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#94A3B8">powershell — test_runner.py</text>
+      <!-- Status Badge -->
+      <g transform="translate(340, 10)">
+        <rect width="84" height="20" rx="10" fill="#15803D"/>
+        <text x="12" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="800" fill="#DCFCE7">58/58 OK</text>
+      </g>
+      <!-- Terminal Output lines -->
+      <text x="18" y="52" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" fill="#38BDF8">&gt; python -m unittest discover -s tests -p &quot;test_*.py&quot;</text>
+      <text x="18" y="74" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" fill="#E2E8F0">Ran 58 tests in 0.082s</text>
+      <text x="18" y="96" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="bold" fill="#4ADE80">OK (passes=58, failures=0, errors=0) [100% Passed]</text>
+    </g>
+  </g>
+</svg>

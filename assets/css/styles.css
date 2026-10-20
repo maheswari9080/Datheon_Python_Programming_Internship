@@ -575,6 +575,29 @@ body {
   margin: 0 8px;
 }
 
+/* Media & Visual Banner Cards */
+.media-banner {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-md);
+  margin: 28px 0;
+  background: #ffffff;
+  display: block;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.media-banner:hover {
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.media-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Accessibility & Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

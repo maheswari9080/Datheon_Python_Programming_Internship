@@ -1,186 +1,235 @@
-# Python Internship Project Suite
+<p align="center">
+  <img src="assets/images/banner_light_hero.png" alt="Python Internship Project Suite — Universal Dashboard" width="100%" />
+</p>
 
-Datheon Python Internship — Four Independent Python Applications + Universal Web Dashboard.
-
-[![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-58%20passed-brightgreen)](docs/TEST_REPORT.md)
-[![Status](https://img.shields.io/badge/build-passing-brightgreen)](docs/TEST_REPORT.md)
-
----
-
-## License
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-3B82F6?style=for-the-badge&logo=python&logoColor=white" alt="Python Version" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-10B981?style=for-the-badge" alt="License" /></a>
+  <a href="docs/TEST_REPORT.md"><img src="https://img.shields.io/badge/tests-58%20passed%20(100%25)-059669?style=for-the-badge" alt="Tests Passed" /></a>
+  <a href="docs/TEST_REPORT.md"><img src="https://img.shields.io/badge/build-passing-0284C7?style=for-the-badge" alt="Build Status" /></a>
+  <a href="https://github.com/maheswari9080/Python-Programming-Internship-Datheon"><img src="https://img.shields.io/badge/internship-Datheon-8B5CF6?style=for-the-badge" alt="Datheon Internship" /></a>
+</p>
 
 ---
 
 ## Suite Purpose & Overview
-This repository contains four completely decoupled, production-grade Python applications demonstrating core software engineering capabilities: algorithmic problem-solving, financial data processing, filesystem automation, and deterministic conversational AI. All projects are unified through an accessible developer portal dashboard (`index.html`).
+
+This repository houses four decoupled, production-grade Python applications developed for the **Datheon Python Programming Internship**. Spanning algorithmic problem solving, financial valuation, filesystem automation, and deterministic NLP, each application is fully functional offline, covered with comprehensive automated unit tests, and accessible through an interactive client-side developer portal (`index.html`).
+
+<p align="center">
+  <img src="assets/images/showcase_light_suite.png" alt="Four Specialized Python Engineering Applications Showcase" width="100%" />
+</p>
 
 ---
 
-## Repository Structure
+## Quick Navigation
+
+| Section | Description |
+| :--- | :--- |
+| **[Applications](#the-four-applications)** | In-depth specifications for all 4 decoupled projects |
+| **[System Architecture](#system-architecture--pipeline)** | Architectural blueprint, decoupled layers, and data pipelines |
+| **[Datasets & Provenance](#verified-datasets--provenance)** | External datasets, verification hashes, and offline fallbacks |
+| **[Terminal Execution](#terminal-execution-guide)** | Copy-paste terminal launch commands |
+| **[Test Verification](#automated-testing--quality-assurance)** | 58-test QA suite execution commands and coverage |
+| **[Web Dashboard](#universal-web-dashboard)** | Interactive client-side portal overview |
+| **[License](#license)** | MIT open-source license information |
+
+---
+
+## The Four Applications
+
+### 01. Hangman Console Game (`task1_hangman/`)
+An interactive CLI word-guessing game built on an isolated finite-state engine.
+- **Strict 6-Mistake Ceiling**: Visual progression across 7 ASCII gallows stages.
+- **Duplicate Guess Immunity**: Entering already-guessed or invalid characters incurs zero penalty.
+- **Candidate Filtering**: Automatically loads 4–10 letter uppercase words from the Google 10,000 words list with offline fallback.
+- **Test Coverage**: 18 automated unit tests covering state transitions, victory, defeat, and input validation.
+
+### 02. Stock Portfolio Performance Tracker (`task2_portfolio/`)
+A financial valuation tool computing invested capital, market valuation, and percentage returns.
+- **Provider-Independent Pricing**: Integrates real-time quotes (optional `yfinance`), offline reference feed (`sample_prices.json`), or manual terminal entry.
+- **S&P 500 Constituent Validation**: Validates tickers against canonical constituent listings (`data/constituents.csv`).
+- **RFC 4180 CSV Persistence**: Exports portfolio summaries to timestamped CSV files.
+- **Test Coverage**: 14 automated unit tests covering mathematical accuracy, unpriced tickers, and CSV schema integrity.
+
+### 03. Automated File Organizer (`task3_file_organizer/`)
+A safe filesystem automation utility categorizing disorganized directories into 8 semantic taxonomy folders.
+- **Strict Safety Guardrails**: Refuses execution on filesystem roots (`C:\`, `/`), OS system paths (`System32`, `Program Files`), and project source code.
+- **Dry-Run Simulation**: Allows users to preview planned moves without modifying disk state.
+- **Safe Collision Handling**: Prevents silent overwrite via timestamp renaming, skipping, or manual overrides.
+- **Immutable Audit Logging**: Records every executed file action in `logs/organizer_audit.log`.
+- **Test Coverage**: 12 automated unit tests operating inside temporary sandboxes.
+
+### 04. Rule-Based FAQ Assistant (`task4_chatbot/`)
+A deterministic conversational AI answering student queries regarding the Datheon internship program.
+- **Token Scoring Engine**: Uses token overlap and priority scoring with a deterministic 0.40 confidence threshold.
+- **Flexible Schema Adapter**: Reads nested JSON structures (`data/sample_faq.json`) with automated key adaptation.
+- **Truthful Non-Fabrication**: Fallback mechanism strictly prevents hallucination on low-confidence queries.
+- **Dual Execution**: Supports continuous interactive conversational sessions or single-query CLI queries (`--query`).
+- **Test Coverage**: 14 automated unit tests verifying schema loading, classification, and edge cases.
+
+---
+
+## System Architecture & Pipeline
+
+The suite follows an enterprise 3-tier decoupled architectural pattern:
+
+<p align="center">
+  <img src="assets/images/architecture_light_flow.png" alt="Decoupled Architecture & Dataflow Pipeline" width="100%" />
+</p>
+
 ```
 internship-project-suite/
 │
 ├── index.html                   # Universal web portal (Root dashboard)
 ├── README.md                    # Master documentation (this file)
 ├── requirements.txt             # Dependency specification
+├── LICENSE                      # MIT Open Source License
 ├── .gitignore                   # Version control exclusions
 │
 ├── assets/                      # Shared assets for web portal
 │   ├── css/styles.css           # Design tokens (design-colorize compliant)
-│   └── js/main.js               # Interactive clipboard & UI scripts
+│   ├── js/main.js               # Interactive clipboard & UI scripts
+│   └── images/                  # High-craft visual assets & diagrams
+│       ├── banner_light_hero.png
+│       ├── showcase_light_suite.png
+│       └── architecture_light_flow.png
 │
 ├── task1_hangman/               # Task 01: Hangman Console Game
-│   ├── hangman.py               # Interactive CLI game controller
-│   ├── game_engine.py           # Pure game state machine & rules
-│   ├── graphics.py              # 7 ASCII gallows stages & board rendering
-│   ├── word_loader.py           # Candidate word loader & fallback
-│   ├── data/words.txt           # Filtered Google 10,000 words dataset
-│   ├── tests/test_hangman.py    # 18 automated unit tests
-│   ├── index.html               # Task 1 web project portal
-│   └── README.md                # Task 1 documentation
-│
 ├── task2_portfolio/             # Task 02: Stock Portfolio Performance Tracker
-│   ├── portfolio.py             # Interactive CLI valuation tool
-│   ├── portfolio_calculator.py  # Financial math engine & dataclasses
-│   ├── constituents_loader.py   # S&P 500 constituent validator
-│   ├── price_providers.py       # Provider-independent pricing interface
-│   ├── csv_exporter.py          # RFC 4180 CSV persistence
-│   ├── portfolio_summary.csv    # Exported portfolio valuation report
-│   ├── sample_prices.json       # Offline reference quotes feed
-│   ├── data/constituents.csv    # S&P 500 company constituent records
-│   ├── tests/test_portfolio.py  # 14 automated unit tests
-│   ├── index.html               # Task 2 web project portal
-│   └── README.md                # Task 2 documentation
-│
 ├── task3_file_organizer/        # Task 03: Automated File Organizer
-│   ├── organizer.py             # CLI file organizer
-│   ├── categories.py            # Category taxonomy & extension mapping
-│   ├── safety_guard.py          # Root/system safety & collision handling
-│   ├── logs/organizer_audit.log # Detailed audit log
-│   ├── tests/test_organizer.py  # 12 automated unit tests (temporary sandboxes)
-│   ├── index.html               # Task 3 web project portal
-│   └── README.md                # Task 3 documentation
-│
 ├── task4_chatbot/               # Task 04: Rule-Based FAQ Assistant
-│   ├── chatbot.py               # Interactive CLI conversational loop
-│   ├── intent_classifier.py     # Rule-based regex & token scoring engine
-│   ├── faq_loader.py            # FAQ JSON schema adapter & fallback
-│   ├── data/sample_faq.json     # Verified internship FAQ dataset
-│   ├── tests/test_chatbot.py    # 14 automated unit tests
-│   ├── index.html               # Task 4 web project portal
-│   └── README.md                # Task 4 documentation
 │
-└── docs/                        # Suite-wide technical documentation
-    ├── ARCHITECTURE.md          # In-depth architectural specification
-    ├── DATASET_SOURCES.md       # Dataset sources & schema documentation
+└── docs/                        # Technical Documentation
+    ├── ARCHITECTURE.md          # Architectural specification
+    ├── DATASET_SOURCES.md       # Dataset sources & schema validation
     └── TEST_REPORT.md           # Master QA test execution report
 ```
 
 ---
 
-## Python Version & Requirements
-- **Python Version**: Python 3.10, 3.11, or 3.12.
-- **Core Dependencies**: None. All core applications rely exclusively on Python standard library modules (`random`, `csv`, `pathlib`, `shutil`, `re`, `json`, `argparse`, `unittest`).
-- **Optional Dependencies**:
-  - `yfinance`: Optional live stock quote fetching for Task 2. The tracker works fully offline without it.
-
----
-
 ## Verified Datasets & Provenance
-| Project | Dataset | Source URL | Verified Local File |
-| :--- | :--- | :--- | :--- |
-| **01 Hangman** | English Words | [Google 10k English](https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt) | `task1_hangman/data/words.txt` |
-| **02 Portfolio** | S&P 500 Constituents | [DataHub Constituents](https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv) | `task2_portfolio/data/constituents.csv` |
-| **03 Organizer** | Python `shutil` Docs | [Python Library Documentation](https://docs.python.org/3/library/shutil.html) | Configurable taxonomy |
-| **04 Chatbot** | Internship FAQ | [Datheon FAQ Dataset](https://www.datheon.in/datasets/sample_faq.json) | `task4_chatbot/data/sample_faq.json` |
 
-*Every task includes structured offline fallback data, guaranteeing seamless execution even in air-gapped environments.*
+Every project includes local verified data assets accompanied by air-gapped fallback mechanisms:
+
+| Project | Dataset | Source URL | Verified Local File | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **01 Hangman** | English Words | [Google 10k English](https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt) | `task1_hangman/data/words.txt` | `Verified (8,076 words)` |
+| **02 Portfolio** | S&P 500 Constituents | [DataHub Constituents](https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv) | `task2_portfolio/data/constituents.csv` | `Verified (503 companies)` |
+| **03 Organizer** | Filesystem Taxonomy | [Python shutil Docs](https://docs.python.org/3/library/shutil.html) | Internal Schema | `Verified (8 categories)` |
+| **04 Chatbot** | Internship FAQ | [Datheon FAQ Dataset](https://www.datheon.in/datasets/sample_faq.json) | `task4_chatbot/data/sample_faq.json` | `Verified (Canonical JSON)` |
 
 ---
 
-## Execution Guide
+## Terminal Execution Guide
+
+All applications run directly with standard Python 3.10, 3.11, or 3.12 without installing third-party packages:
 
 ### Task 01: Hangman Console Game
 ```bash
-# Interactive play
+# Interactive play mode
 python task1_hangman/hangman.py
 
-# Deterministic test mode
+# Deterministic testing with predetermined word
 python task1_hangman/hangman.py --word PYTHON
 ```
 
 ### Task 02: Stock Portfolio Performance Tracker
 ```bash
-# Interactive menu mode
+# Interactive terminal portfolio builder
 python task2_portfolio/portfolio.py
 
-# Non-interactive demo mode (outputs ASCII table and exports CSV)
+# Non-interactive demo mode (prints ASCII valuation report & exports CSV)
 python task2_portfolio/portfolio.py --demo
 ```
 
 ### Task 03: Automated File Organizer
 ```bash
-# Dry-run simulation (preview moves without touching files)
+# Safe dry-run preview (simulates file moves without modifying files)
 python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads" --dry-run
 
 # Live organization
 python task3_file_organizer/organizer.py --target "C:\Users\YourName\Downloads"
 ```
 
-### Task 04: Rule-Based Interactive Chatbot
+### Task 04: Rule-Based FAQ Chatbot
 ```bash
 # Interactive conversational session
 python task4_chatbot/chatbot.py
 
-# Single-query testing
-python task4_chatbot/chatbot.py --query "What are your hours of operation?"
+# Single-query execution
+python task4_chatbot/chatbot.py --query "What is the stipend for this internship?"
 ```
 
 ---
 
-## Running the Automated Test Suites
-Run the entire 58-test suite across all four applications:
+## Automated Testing & Quality Assurance
+
+The suite features 58 automated unit tests built with Python's standard `unittest` framework:
+
 ```bash
-# Task 1 Hangman (18 tests)
+# Run Task 1 tests (18 tests)
 python -m unittest discover -s task1_hangman/tests -p "test_*.py" -v
 
-# Task 2 Portfolio (14 tests)
+# Run Task 2 tests (14 tests)
 python -m unittest discover -s task2_portfolio/tests -p "test_*.py" -v
 
-# Task 3 File Organizer (12 tests)
+# Run Task 3 tests (12 tests)
 python -m unittest discover -s task3_file_organizer/tests -p "test_*.py" -v
 
-# Task 4 FAQ Chatbot (14 tests)
+# Run Task 4 tests (14 tests)
 python -m unittest discover -s task4_chatbot/tests -p "test_*.py" -v
 ```
 
+### Test Summary Matrix
+
+| Application | Test Suite | Tests Run | Result | Key Validations |
+| :--- | :--- | :---: | :---: | :--- |
+| **01 Hangman** | `test_hangman.py` | 18 | `100% OK` | Gallows progression, repeat input immunity, victory/loss states |
+| **02 Portfolio** | `test_portfolio.py` | 14 | `100% OK` | Valuation math, unpriced ticker handling, RFC 4180 CSV export |
+| **03 Organizer** | `test_organizer.py` | 12 | `100% OK` | Root safety guard, dry-run neutrality, collision resolution |
+| **04 Chatbot** | `test_chatbot.py` | 14 | `100% OK` | Schema adapter, token scoring priority, non-fabrication fallback |
+| **Total Suite** | **4 Suites** | **58** | **`100% PASS`** | **Zero failures, zero errors (0.082s)** |
+
 ---
 
-## Opening the Web Dashboard
-Open `index.html` directly in any modern browser:
+## Universal Web Dashboard
+
+Open `index.html` in any modern web browser to access the interactive web portal:
+
 ```powershell
 # Windows PowerShell
 Start-Process "index.html"
 
-# Or on macOS / Linux
-# open index.html  # macOS
-# xdg-open index.html  # Linux
+# macOS
+# open index.html
+
+# Linux
+# xdg-open index.html
 ```
-The universal dashboard works entirely client-side with zero local server requirement.
+
+- **Zero-Server Requirement**: Operates purely client-side without Node.js, Python server, or web frameworks.
+- **Design-Colorize Compliant**: Curated light and dark token palettes with WCAG AA compliance.
+- **Interactive Helpers**: One-click clipboard copy for commands, live search filtering, and individual project landing pages.
 
 ---
 
 ## Portfolio Pricing & Educational Disclaimer
-- `constituents.csv` contains S&P 500 company directory metadata, **not** real-time pricing feeds.
-- Valuation pricing is provider-independent: uses offline reference quotes (`sample_prices.json`), manual user input, or optional `yfinance` live fetching.
-- **Disclaimer**: This software is strictly for academic and educational evaluation. It does not provide financial or investment advice.
+
+- `constituents.csv` contains company directory metadata, **not** real-time pricing feeds.
+- Valuation pricing is provider-independent: uses offline reference quotes (`sample_prices.json`), manual terminal input, or optional `yfinance` live fetching.
+- **Disclaimer**: *This software is strictly for academic and educational evaluation. It does not provide financial or investment advice.*
 
 ---
 
 ## File Organizer Safety Protocol
+
 - Strictly refuses to organize filesystem roots (`C:\`, `/`), operating system directories (`System32`, `Program Files`, `/bin`), and the project repository directory itself.
 - Re-running the utility never creates recursive nested category folders.
 - Conflicts are handled safely without silent data loss via configurable collision policies (`rename`, `skip`, `overwrite`).
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for complete terms.

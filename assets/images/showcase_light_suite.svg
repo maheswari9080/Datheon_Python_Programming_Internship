@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="680" rx="24" fill="url(#bgGrad2)"/>
+  <rect width="1200" height="680" rx="24" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M 0 24 Q 0 0 24 0 L 1176 0 Q 1200 0 1200 24 L 1200 6 L 0 6 Z" fill="#10B981"/>
+
+  <!-- Section Header -->
+  <g transform="translate(60, 42)">
+    <rect width="180" height="30" rx="15" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+    <circle cx="15" cy="15" r="5" fill="#10B981"/>
+    <text x="28" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#047857" letter-spacing="1">SUITE SHOWCASE</text>
+
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="32" font-weight="800" fill="#0F172A" letter-spacing="-0.5">
+      Four Specialized Python Engineering Applications
+    </text>
+    <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15" font-weight="400" fill="#64748B">
+      Decoupled architectures adhering to clean code standards, automated testing, and comprehensive offline resilience.
+    </text>
+  </g>
+
+  <!-- 4-App Grid: 2x2 Layout -->
+  <g transform="translate(60, 160)">
+
+    <!-- ================= CARD 01: HANGMAN ================= -->
+    <g transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect width="525" height="235" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="235" rx="3" fill="#0284C7"/>
+
+      <g transform="translate(24, 20)">
+        <rect width="78" height="26" rx="6" fill="#E0F2FE"/>
+        <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#0369A1">TASK 01</text>
+        <text x="92" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="19" font-weight="800" fill="#0F172A">Hangman Console Game</text>
+      </g>
+
+      <g transform="translate(24, 62)">
+        <g>
+          <rect width="215" height="150" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <!-- Gallows -->
+          <g stroke="#475569" stroke-width="2" stroke-linecap="round">
+            <line x1="20" y1="125" x2="80" y2="125"/>
+            <line x1="45" y1="125" x2="45" y2="25"/>
+            <line x1="45" y1="25" x2="85" y2="25"/>
+            <line x1="85" y1="25" x2="85" y2="40"/>
+            <circle cx="85" cy="48" r="8" fill="none"/>
+            <line x1="85" y1="56" x2="85" y2="84"/>
+            <line x1="85" y1="65" x2="70" y2="55"/>
+            <line x1="85" y1="65" x2="100" y2="55"/>
+          </g>
+          <!-- Word Guess Letter Tiles -->
+          <g transform="translate(110, 25)">
+            <text y="14" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="bold" fill="#0F172A">SECRET WORD:</text>
+            <g transform="translate(0, 24)" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="bold">
+              <rect x="0" y="0" width="16" height="22" rx="3" fill="#EFF6FF" stroke="#BFDBFE"/>
+              <text x="4" y="15" fill="#1D4ED8">P</text>
+              <rect x="18" y="0" width="16" height="22" rx="3" fill="#EFF6FF" stroke="#BFDBFE"/>
+              <text x="22" y="15" fill="#1D4ED8">Y</text>
+              <rect x="36" y="0" width="16" height="22" rx="3" fill="#F1F5F9" stroke="#CBD5E1"/>
+              <text x="40" y="15" fill="#64748B">_</text>
+              <rect x="54" y="0" width="16" height="22" rx="3" fill="#EFF6FF" stroke="#BFDBFE"/>
+              <text x="58" y="15" fill="#1D4ED8">H</text>
+              <rect x="72" y="0" width="16" height="22" rx="3" fill="#EFF6FF" stroke="#BFDBFE"/>
+              <text x="76" y="15" fill="#1D4ED8">O</text>
+            </g>
+            <g transform="translate(0, 60)">
+              <rect width="90" height="22" rx="6" fill="#FEE2E2"/>
+              <text x="8" y="15" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="bold" fill="#B91C1C">MISTAKES: 2/6</text>
+            </g>
+            <g transform="translate(0, 92)">
+              <rect width="90" height="20" rx="4" fill="#DCFCE7"/>
+              <text x="8" y="14" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="bold" fill="#166534">GUESS: VALID</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- Right Highlights List -->
+        <g transform="translate(235, 10)">
+          <text y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• 7 Visual ASCII Gallows Stages</text>
+          <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Strict 6-Mistake Ceiling</text>
+          <text y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Duplicate Guess Immunity</text>
+          <text y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• 8,076 Filtered Google Words</text>
+          <g transform="translate(0, 110)">
+            <rect width="138" height="26" rx="13" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+            <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#15803D">18 / 18 Tests Passed</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= CARD 02: STOCK PORTFOLIO ================= -->
+    <g transform="translate(555, 0)" filter="url(#cardShadow)">
+      <rect width="525" height="235" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="235" rx="3" fill="#10B981"/>
+
+      <g transform="translate(24, 20)">
+        <rect width="78" height="26" rx="6" fill="#D1FAE5"/>
+        <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#065F46">TASK 02</text>
+        <text x="92" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="19" font-weight="800" fill="#0F172A">Stock Portfolio Tracker</text>
+      </g>
+
+      <g transform="translate(24, 62)">
+        <g>
+          <rect width="215" height="150" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="bold" fill="#64748B">PORTFOLIO VALUATION</text>
+          <text x="14" y="46" font-family="'JetBrains Mono', Consolas, monospace" font-size="16" font-weight="800" fill="#0F172A">$148,250.00</text>
+          <g transform="translate(14, 54)">
+            <rect width="72" height="20" rx="4" fill="#DCFCE7"/>
+            <text x="8" y="14" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="bold" fill="#15803D">+18.42% ▲</text>
+          </g>
+          <path d="M 14 115 Q 50 105 80 90 T 140 75 T 200 60" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M 14 115 Q 50 105 80 90 T 140 75 T 200 60 L 200 135 L 14 135 Z" fill="#10B981" fill-opacity="0.08"/>
+          <g transform="translate(14, 126)">
+            <text font-family="'JetBrains Mono', Consolas, monospace" font-size="9" fill="#64748B">AAPL: $234 · MSFT: $428 · NVDA: $142</text>
+          </g>
+        </g>
+
+        <!-- Right Highlights List -->
+        <g transform="translate(235, 10)">
+          <text y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Real-time &amp; Offline Quotes</text>
+          <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• S&amp;P 500 Constituent Validation</text>
+          <text y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• RFC 4180 CSV Persistence</text>
+          <text y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Truthful Provenance Reporting</text>
+          <g transform="translate(0, 110)">
+            <rect width="138" height="26" rx="13" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+            <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#15803D">14 / 14 Tests Passed</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= CARD 03: FILE ORGANIZER ================= -->
+    <g transform="translate(0, 255)" filter="url(#cardShadow)">
+      <rect width="525" height="235" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="235" rx="3" fill="#F59E0B"/>
+
+      <g transform="translate(24, 20)">
+        <rect width="78" height="26" rx="6" fill="#FEF3C7"/>
+        <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#B45309">TASK 03</text>
+        <text x="92" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="19" font-weight="800" fill="#0F172A">Automated File Organizer</text>
+      </g>
+
+      <g transform="translate(24, 62)">
+        <g>
+          <rect width="215" height="150" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <g transform="translate(14, 16)">
+            <rect x="0" y="0" width="36" height="18" rx="4" fill="#FDE68A"/>
+            <text x="44" y="13" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#1E293B">Documents/ [24]</text>
+            <rect x="0" y="24" width="36" height="18" rx="4" fill="#BAE6FD"/>
+            <text x="44" y="37" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#1E293B">Images/ [58]</text>
+            <rect x="0" y="48" width="36" height="18" rx="4" fill="#C7D2FE"/>
+            <text x="44" y="61" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#1E293B">Archives/ [12]</text>
+            <rect x="0" y="72" width="36" height="18" rx="4" fill="#BBF7D0"/>
+            <text x="44" y="85" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#1E293B">Code/ [95]</text>
+          </g>
+          <g transform="translate(12, 114)">
+            <rect width="190" height="24" rx="6" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+            <circle cx="16" cy="12" r="6" fill="#16A34A"/>
+            <path d="M 13 12 L 15 14 L 19 10" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <text x="28" y="16" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="bold" fill="#15803D">SAFETY GUARD: PROTECTED</text>
+          </g>
+        </g>
+
+        <!-- Right Highlights List -->
+        <g transform="translate(235, 10)">
+          <text y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• 8 Semantic File Categories</text>
+          <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Safe Dry-Run Simulation</text>
+          <text y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Root Directory Guardrails</text>
+          <text y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Collision Renaming &amp; Audit Log</text>
+          <g transform="translate(0, 110)">
+            <rect width="138" height="26" rx="13" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+            <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#15803D">12 / 12 Tests Passed</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= CARD 04: FAQ CHATBOT ================= -->
+    <g transform="translate(555, 255)" filter="url(#cardShadow)">
+      <rect width="525" height="235" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="235" rx="3" fill="#8B5CF6"/>
+
+      <g transform="translate(24, 20)">
+        <rect width="78" height="26" rx="6" fill="#EDE9FE"/>
+        <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#6D28D9">TASK 04</text>
+        <text x="92" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="19" font-weight="800" fill="#0F172A">Rule-Based FAQ Chatbot</text>
+      </g>
+
+      <g transform="translate(24, 62)">
+        <g>
+          <rect width="215" height="150" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <g transform="translate(35, 14)">
+            <rect width="168" height="30" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+            <text x="12" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10.5" font-weight="600" fill="#1E40AF">&quot;What is the stipend?&quot;</text>
+          </g>
+          <g transform="translate(12, 52)">
+            <rect width="190" height="42" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+            <text x="12" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Stipend details are shared upon</text>
+            <text x="12" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="#0F172A">offer letter release.</text>
+          </g>
+          <g transform="translate(12, 106)">
+            <rect width="190" height="26" rx="6" fill="#EDE9FE" stroke="#DDD6FE"/>
+            <text x="12" y="17" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="bold" fill="#6D28D9">CONFIDENCE: 94.2% &gt;= 40%</text>
+          </g>
+        </g>
+
+        <!-- Right Highlights List -->
+        <g transform="translate(235, 10)">
+          <text y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Deterministic Token Scoring</text>
+          <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Flexible JSON Schema Adapter</text>
+          <text y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Non-Fabrication Fallback</text>
+          <text y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#1E293B">• Interactive &amp; Single-Query CLI</text>
+          <g transform="translate(0, 110)">
+            <rect width="138" height="26" rx="13" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+            <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#15803D">14 / 14 Tests Passed</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

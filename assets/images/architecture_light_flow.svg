@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="archShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="680" rx="24" fill="url(#bgGrad3)"/>
+  <rect width="1200" height="680" rx="24" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M 0 24 Q 0 0 24 0 L 1176 0 Q 1200 0 1200 24 L 1200 6 L 0 6 Z" fill="#2563EB"/>
+
+  <!-- Section Header -->
+  <g transform="translate(60, 42)">
+    <rect width="210" height="30" rx="15" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+    <circle cx="15" cy="15" r="5" fill="#2563EB"/>
+    <text x="28" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="700" fill="#1D4ED8" letter-spacing="1">SYSTEM ARCHITECTURE</text>
+
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="32" font-weight="800" fill="#0F172A" letter-spacing="-0.5">
+      Decoupled Architecture &amp; Dataflow Pipeline
+    </text>
+    <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="15" font-weight="400" fill="#64748B">
+      Canonical datasets feed isolated Python engines with resilient offline fallbacks and dual interfaces.
+    </text>
+  </g>
+
+  <!-- 3 Architectural Columns -->
+  <g transform="translate(60, 160)">
+
+    <!-- ================= COLUMN 1: DATASETS & OFFLINE STORAGE ================= -->
+    <g transform="translate(0, 0)" filter="url(#archShadow)">
+      <rect width="320" height="475" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <path d="M 0 16 Q 0 0 16 0 L 304 0 Q 320 0 320 16 L 320 42 L 0 42 Z" fill="#F1F5F9"/>
+      <text x="20" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12" font-weight="800" fill="#475569" letter-spacing="0.5">1. DATA &amp; STORAGE LAYER</text>
+
+      <!-- Source 1 -->
+      <g transform="translate(18, 56)">
+        <rect width="284" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0284C7">Google 10,000 Words List</text>
+        <text x="14" y="42" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#64748B">task1_hangman/data/words.txt</text>
+        <rect x="14" y="56" width="135" height="20" rx="4" fill="#E0F2FE"/>
+        <text x="20" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="bold" fill="#0369A1">8,076 Filtered Candidates</text>
+      </g>
+
+      <!-- Source 2 -->
+      <g transform="translate(18, 158)">
+        <rect width="284" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#10B981">S&amp;P 500 Constituents CSV</text>
+        <text x="14" y="42" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#64748B">task2_portfolio/data/constituents.csv</text>
+        <rect x="14" y="56" width="135" height="20" rx="4" fill="#DCFCE7"/>
+        <text x="20" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="bold" fill="#15803D">503 Validated Tickers</text>
+      </g>
+
+      <!-- Source 3 -->
+      <g transform="translate(18, 260)">
+        <rect width="284" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#F59E0B">Filesystem Metadata</text>
+        <text x="14" y="42" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#64748B">pathlib + shutil taxonomy</text>
+        <rect x="14" y="56" width="135" height="20" rx="4" fill="#FEF3C7"/>
+        <text x="20" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400E">8 Semantic Categories</text>
+      </g>
+
+      <!-- Source 4 -->
+      <g transform="translate(18, 362)">
+        <rect width="284" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#8B5CF6">Datheon FAQ Dataset</text>
+        <text x="14" y="42" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#64748B">task4_chatbot/data/sample_faq.json</text>
+        <rect x="14" y="56" width="145" height="20" rx="4" fill="#EDE9FE"/>
+        <text x="20" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10" font-weight="bold" fill="#6D28D9">Canonical Internship Q&amp;A</text>
+      </g>
+    </g>
+
+    <!-- Connector Lines Col 1 -> Col 2 -->
+    <g stroke="#93C5FD" stroke-width="2.5" fill="none">
+      <line x1="320" y1="100" x2="380" y2="100" marker-end="url(#arrowHead)"/>
+      <line x1="320" y1="202" x2="380" y2="202" marker-end="url(#arrowHead)"/>
+      <line x1="320" y1="304" x2="380" y2="304" marker-end="url(#arrowHead)"/>
+      <line x1="320" y1="406" x2="380" y2="406" marker-end="url(#arrowHead)"/>
+    </g>
+
+    <!-- ================= COLUMN 2: PYTHON 3 CORE DOMAIN ENGINES ================= -->
+    <g transform="translate(385, 0)" filter="url(#archShadow)">
+      <rect width="365" height="475" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <path d="M 0 16 Q 0 0 16 0 L 349 0 Q 365 0 365 16 L 365 42 L 0 42 Z" fill="#F1F5F9"/>
+      <text x="20" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12" font-weight="800" fill="#475569" letter-spacing="0.5">2. CORE APPLICATION ENGINES</text>
+
+      <!-- Engine 1 -->
+      <g transform="translate(18, 54)">
+        <rect width="329" height="92" rx="10" fill="#F0F9FF" stroke="#BAE6FD"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="800" fill="#0369A1">Task 1: Hangman State Machine</text>
+        <text x="16" y="46" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#475569">game_engine.py + graphics.py</text>
+        <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" fill="#64748B">6-mistake ceiling, guess immunity, 7 ASCII stages.</text>
+      </g>
+
+      <!-- Engine 2 -->
+      <g transform="translate(18, 156)">
+        <rect width="329" height="92" rx="10" fill="#ECFDF5" stroke="#A7F3D0"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="800" fill="#047857">Task 2: Portfolio Valuation Engine</text>
+        <text x="16" y="46" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#475569">portfolio_calculator.py + csv_exporter.py</text>
+        <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" fill="#64748B">Return math, provider independence, RFC 4180 CSV.</text>
+      </g>
+
+      <!-- Engine 3 -->
+      <g transform="translate(18, 258)">
+        <rect width="329" height="92" rx="10" fill="#FFFBEB" stroke="#FDE68A"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="800" fill="#B45309">Task 3: Safe File Organizer</text>
+        <text x="16" y="46" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#475569">safety_guard.py + categories.py</text>
+        <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" fill="#64748B">System root guard, dry-run neutrality, audit log.</text>
+      </g>
+
+      <!-- Engine 4 -->
+      <g transform="translate(18, 360)">
+        <rect width="329" height="92" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="800" fill="#6D28D9">Task 4: Intent Classifier NLP</text>
+        <text x="16" y="46" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#475569">intent_classifier.py + faq_loader.py</text>
+        <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" fill="#64748B">Deterministic token scoring, non-fabrication fallback.</text>
+      </g>
+    </g>
+
+    <!-- Connector Lines Col 2 -> Col 3 -->
+    <g stroke="#93C5FD" stroke-width="2.5" fill="none">
+      <line x1="750" y1="100" x2="800" y2="100" marker-end="url(#arrowHead)"/>
+      <line x1="750" y1="202" x2="800" y2="202" marker-end="url(#arrowHead)"/>
+      <line x1="750" y1="304" x2="800" y2="304" marker-end="url(#arrowHead)"/>
+      <line x1="750" y1="406" x2="800" y2="406" marker-end="url(#arrowHead)"/>
+    </g>
+
+    <!-- ================= COLUMN 3: RUNTIME & INTERFACES ================= -->
+    <g transform="translate(805, 0)" filter="url(#archShadow)">
+      <rect width="275" height="475" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <path d="M 0 16 Q 0 0 16 0 L 259 0 Q 275 0 275 16 L 275 42 L 0 42 Z" fill="#F1F5F9"/>
+      <text x="20" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12" font-weight="800" fill="#475569" letter-spacing="0.5">3. PRESENTATION &amp; QA</text>
+
+      <!-- Terminal Runner -->
+      <g transform="translate(16, 52)">
+        <rect width="243" height="110" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">CLI Terminal Controllers</text>
+        <text x="14" y="44" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#64748B">python task1_hangman/hangman.py</text>
+        <text x="14" y="62" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#64748B">python task2_portfolio/portfolio.py</text>
+        <text x="14" y="80" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#64748B">python task3_organizer/organizer.py</text>
+        <text x="14" y="98" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#64748B">python task4_chatbot/chatbot.py</text>
+      </g>
+
+      <!-- Universal Web Dashboard -->
+      <g transform="translate(16, 174)">
+        <rect width="243" height="120" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+        <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="800" fill="#1D4ED8">Universal Web Dashboard</text>
+        <text x="14" y="44" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#1E40AF">index.html (Client Portal)</text>
+        <text x="14" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10.5" fill="#475569">Zero-server standalone navigation.</text>
+        <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10.5" fill="#475569">Pure HTML5, CSS tokens &amp; JS.</text>
+        <rect x="14" y="92" width="105" height="18" rx="4" fill="#DBEAFE"/>
+        <text x="20" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="9.5" font-weight="bold" fill="#1E40AF">Pure HTML/CSS/JS</text>
+      </g>
+
+      <!-- Master QA Harness -->
+      <g transform="translate(16, 306)">
+        <rect width="243" height="152" rx="10" fill="#ECFDF5" stroke="#A7F3D0"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="13" font-weight="800" fill="#047857">Master QA Unit Harness</text>
+        <text x="14" y="40" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#065F46">python -m unittest discover</text>
+        <g transform="translate(14, 56)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10.5" fill="#334155">
+          <text y="14">• Task 1: 18 / 18 Passed</text>
+          <text y="28">• Task 2: 14 / 14 Passed</text>
+          <text y="42">• Task 3: 12 / 12 Passed</text>
+          <text y="56">• Task 4: 14 / 14 Passed</text>
+        </g>
+        <g transform="translate(14, 118)">
+          <rect width="180" height="24" rx="12" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+          <text x="16" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="10.5" font-weight="800" fill="#15803D">58 / 58 TESTS (100% OK)</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>
