@@ -1,0 +1,11 @@
+# Python Internship Project Suite Requirements
+# ===============================================
+# Core Applications (Hangman, File Organizer, FAQ Chatbot)
+# rely exclusively on the Python standard library (Python 3.10+).
+
+# Optional External Providers:
+# For Task 2 (Stock Portfolio Performance Tracker):
+# yfinance provides optional live stock market feeds if desired.
+# The tool functions in full offline mode without it.
+# Uncomment the line below to install:
+# yfinance>=0.2.30
