@@ -1,0 +1,24 @@
+{
+  "_metadata": {
+    "description": "Offline sample reference market prices for S&P 500 constituents.",
+    "is_realtime": false,
+    "source_type": "Offline Sample Reference",
+    "updated": "2026-10-20T00:00:00Z"
+  },
+  "quotes": {
+    "AAPL": 228.50,
+    "MSFT": 418.25,
+    "GOOGL": 164.70,
+    "AMZN": 186.40,
+    "NVDA": 138.90,
+    "TSLA": 220.15,
+    "META": 585.30,
+    "BRK.B": 452.10,
+    "JNJ": 161.80,
+    "JPM": 222.60,
+    "MMM": 130.45,
+    "AOS": 84.10,
+    "ABT": 118.90,
+    "ABBV": 190.25
+  }
+}
