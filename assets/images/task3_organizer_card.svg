@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440">
+  <defs>
+    <linearGradient id="t3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#FFFBEB"/>
+    </linearGradient>
+    <filter id="t3Shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#D97706" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="440" rx="18" fill="url(#t3Bg)"/>
+  <rect width="1000" height="440" rx="18" fill="none" stroke="#FDE68A" stroke-width="2"/>
+  <rect x="0" y="0" width="1000" height="6" fill="#D97706"/>
+
+  <!-- Left: Taxonomy & Safety Mockup -->
+  <g transform="translate(40, 36)" filter="url(#t3Shadow)">
+    <rect width="400" height="368" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="400" height="36" rx="14" fill="#F8FAFC"/>
+    <circle cx="24" cy="18" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="18" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="18" r="5" fill="#10B981"/>
+    <text x="80" y="22" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#64748B">organizer.py --dry-run</text>
+
+    <!-- Safety Shield Banner -->
+    <g transform="translate(20, 50)">
+      <rect width="360" height="52" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#DC2626">🛡️ STRICT SAFETY GUARDRAIL ACTIVE</text>
+      <text x="14" y="40" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#7F1D1D">Refuses: C:\, System32, /bin, &amp; Project Source Roots</text>
+    </g>
+
+    <!-- 8 Taxonomy Categories Grid -->
+    <g transform="translate(20, 115)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#64748B">8 SEMANTIC TAXONOMY FOLDERS:</text>
+      
+      <g transform="translate(0, 14)" font-family="'JetBrains Mono', monospace" font-size="10.5">
+        <g transform="translate(0,0)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Documents (.pdf,.docx)</text></g>
+        <g transform="translate(185,0)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Images (.png,.jpg,.svg)</text></g>
+        <g transform="translate(0,30)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Audio (.mp3,.wav,.flac)</text></g>
+        <g transform="translate(185,30)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Video (.mp4,.mkv,.mov)</text></g>
+        <g transform="translate(0,60)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Archives (.zip,.tar.gz)</text></g>
+        <g transform="translate(185,60)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Code (.py,.js,.html,.c)</text></g>
+        <g transform="translate(0,90)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Executables (.exe,.msi)</text></g>
+        <g transform="translate(185,90)"><rect width="175" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/><text x="8" y="16" fill="#0F172A">📁 Data (.csv,.json,.sql)</text></g>
+      </g>
+    </g>
+
+    <!-- Simulation Output Strip -->
+    <g transform="translate(20, 265)">
+      <rect width="360" height="85" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+      <text x="12" y="22" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#B45309">[DRY-RUN PREVIEW] ZERO FILES MOVED</text>
+      <text x="12" y="42" font-family="'JetBrains Mono', monospace" font-size="10" fill="#78350F">Planned: budget.xlsx -&gt; Documents/budget.xlsx</text>
+      <text x="12" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#78350F">Planned: photo.png   -&gt; Images/photo.png</text>
+      <text x="12" y="74" font-family="'JetBrains Mono', monospace" font-size="10" fill="#B45309">Audit: logs/organizer_audit.log ready</text>
+    </g>
+  </g>
+
+  <!-- Right: Architecture & Features -->
+  <g transform="translate(470, 36)">
+    <g>
+      <rect width="90" height="26" rx="6" fill="#FEF3C7"/>
+      <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#B45309">MODULE 03</text>
+      <text x="102" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="900" fill="#0F172A">Automated File Organizer</text>
+    </g>
+
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#475569">
+      A safety-first filesystem automation utility classifying disorganized directories into 8 semantic taxonomy categories with immutable audit logging.
+    </text>
+
+    <!-- Spec List -->
+    <g transform="translate(0, 95)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">
+      <g transform="translate(0, 0)">
+        <rect width="24" height="24" rx="12" fill="#FEF3C7"/>
+        <text x="7" y="16" font-weight="800" fill="#D97706">1</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Dry-Run Simulation Guard:</text>
+        <text x="215" y="16" fill="#64748B">Previews operations without modifying disk state</text>
+      </g>
+
+      <g transform="translate(0, 40)">
+        <rect width="24" height="24" rx="12" fill="#FEF3C7"/>
+        <text x="7" y="16" font-weight="800" fill="#D97706">2</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Collision Resolution Policy:</text>
+        <text x="215" y="16" fill="#64748B">Timestamp renaming prevents accidental overwrites</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <rect width="24" height="24" rx="12" fill="#FEF3C7"/>
+        <text x="7" y="16" font-weight="800" fill="#D97706">3</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Anti-Recursive Idempotency:</text>
+        <text x="215" y="16" fill="#64748B">Re-running ignores already-organized folders</text>
+      </g>
+
+      <g transform="translate(0, 120)">
+        <rect width="24" height="24" rx="12" fill="#DCFCE7"/>
+        <text x="7" y="16" font-weight="800" fill="#15803D">✓</text>
+        <text x="36" y="16" font-weight="700" fill="#15803D">12 Automated Unit Tests:</text>
+        <text x="215" y="16" fill="#166534">100% Passing in 0.057s (unittest)</text>
+      </g>
+    </g>
+
+    <!-- Terminal Command Snippet -->
+    <g transform="translate(0, 275)">
+      <rect width="490" height="85" rx="10" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+      <rect width="490" height="26" rx="10" fill="#FFFBEB"/>
+      <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#B45309">TERMINAL LAUNCH COMMAND</text>
+      <text x="14" y="48" font-family="'JetBrains Mono', monospace" font-size="12" fill="#0F172A">$ python task3_file_organizer/organizer.py --dry-run</text>
+      <text x="14" y="70" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B"># Live run: python task3_file_organizer/organizer.py --target "C:\Downloads"</text>
+    </g>
+  </g>
+</svg>

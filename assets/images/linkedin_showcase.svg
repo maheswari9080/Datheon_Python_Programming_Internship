@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="liBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="liMeshBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="liMeshPurple" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="topAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="35%" stop-color="#8B5CF6"/>
+      <stop offset="70%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="liShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" rx="20" fill="url(#liBgGrad)"/>
+  <rect width="1200" height="675" rx="20" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M 0 20 Q 0 0 20 0 L 1180 0 Q 1200 0 1200 20 L 1200 6 L 0 6 Z" fill="url(#topAccent)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="120" r="160" fill="url(#liMeshBlue)"/>
+  <circle cx="1080" cy="140" r="170" fill="url(#liMeshPurple)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(60, 36)">
+    <!-- Pill Badges -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="28" rx="14" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="5" fill="#4F46E5"/>
+      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#4338CA" letter-spacing="0.5">DATHEON INTERNSHIP</text>
+    </g>
+    <g transform="translate(222, 0)">
+      <rect width="160" height="28" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="5" fill="#10B981"/>
+      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#047857" letter-spacing="0.5">PYTHON 3.10+</text>
+    </g>
+    <g transform="translate(394, 0)">
+      <rect width="195" height="28" rx="14" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="5" fill="#D97706"/>
+      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="800" fill="#B45309" letter-spacing="0.5">100% UNIT TEST PASS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="30" font-weight="900" fill="#0F172A" letter-spacing="-0.5">
+      Python Engineering Internship — 4-Project Capstone Suite
+    </text>
+    <text x="0" y="93" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14.5" font-weight="400" fill="#64748B">
+      Engineered by <tspan font-weight="700" fill="#1E293B">Maheswari</tspan> • Decoupled Clean Architecture • 58 Automated Unit Tests • Pure Python Standard Library
+    </text>
+  </g>
+
+  <!-- 4 Bento Cards (2x2 Grid) -->
+  <g transform="translate(60, 155)">
+
+    <!-- CARD 01: HANGMAN -->
+    <g transform="translate(0, 0)" filter="url(#liShadow)">
+      <rect width="525" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="205" rx="3" fill="#0284C7"/>
+      
+      <g transform="translate(22, 18)">
+        <rect width="72" height="24" rx="6" fill="#E0F2FE"/>
+        <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#0369A1">TASK 01</text>
+        <text x="84" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="#0F172A">Hangman Console Engine</text>
+        
+        <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#475569">
+          Deterministic word guessing state machine with isolated ASCII gallows.
+        </text>
+
+        <!-- Feature chips -->
+        <g transform="translate(0, 58)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#0369A1">✓ 6-Mistake Ceiling</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#0369A1">✓ Repeat Input Immunity</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#0369A1">✓ 8,076 English Words</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#15803D">✓ 18 Unit Tests (100%)</text>
+        </g>
+
+        <!-- Code Pill -->
+        <g transform="translate(0, 126)">
+          <rect width="480" height="26" rx="6" fill="#F1F5F9"/>
+          <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="11" fill="#334155">$ python task1_hangman/hangman.py --word PYTHON</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- CARD 02: PORTFOLIO TRACKER -->
+    <g transform="translate(555, 0)" filter="url(#liShadow)">
+      <rect width="525" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="205" rx="3" fill="#059669"/>
+      
+      <g transform="translate(22, 18)">
+        <rect width="72" height="24" rx="6" fill="#DCFCE7"/>
+        <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#15803D">TASK 02</text>
+        <text x="84" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="#0F172A">Stock Portfolio Tracker</text>
+        
+        <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#475569">
+          Valuation analytics engine with S&amp;P 500 validation &amp; RFC 4180 CSV export.
+        </text>
+
+        <!-- Feature chips -->
+        <g transform="translate(0, 58)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#047857">✓ Real-time/Offline Feeds</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#047857">✓ 503 S&amp;P Constituents</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#047857">✓ P&amp;L Metric Calculations</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#15803D">✓ 14 Unit Tests (100%)</text>
+        </g>
+
+        <!-- Code Pill -->
+        <g transform="translate(0, 126)">
+          <rect width="480" height="26" rx="6" fill="#F1F5F9"/>
+          <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="11" fill="#334155">$ python task2_portfolio/portfolio.py --demo</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- CARD 03: FILE ORGANIZER -->
+    <g transform="translate(0, 222)" filter="url(#liShadow)">
+      <rect width="525" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="205" rx="3" fill="#D97706"/>
+      
+      <g transform="translate(22, 18)">
+        <rect width="72" height="24" rx="6" fill="#FEF3C7"/>
+        <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#B45309">TASK 03</text>
+        <text x="84" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="#0F172A">Automated File Organizer</text>
+        
+        <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#475569">
+          Safe filesystem categorizer across 8 taxonomy categories with audit trails.
+        </text>
+
+        <!-- Feature chips -->
+        <g transform="translate(0, 58)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#B45309">✓ Root &amp; System32 Guard</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#B45309">✓ Dry-Run Zero Disk State</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#B45309">✓ Collision Renaming</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#15803D">✓ 12 Unit Tests (100%)</text>
+        </g>
+
+        <!-- Code Pill -->
+        <g transform="translate(0, 126)">
+          <rect width="480" height="26" rx="6" fill="#F1F5F9"/>
+          <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="11" fill="#334155">$ python task3_file_organizer/organizer.py --dry-run</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- CARD 04: FAQ CHATBOT -->
+    <g transform="translate(555, 222)" filter="url(#liShadow)">
+      <rect width="525" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect width="6" height="205" rx="3" fill="#7C3AED"/>
+      
+      <g transform="translate(22, 18)">
+        <rect width="72" height="24" rx="6" fill="#F3E8FF"/>
+        <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#6B21A8">TASK 04</text>
+        <text x="84" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="#0F172A">Rule-Based FAQ Assistant</text>
+        
+        <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#475569">
+          Deterministic token NLP engine answering queries without hallucinations.
+        </text>
+
+        <!-- Feature chips -->
+        <g transform="translate(0, 58)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#6B21A8">✓ Token Scoring (0.40)</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#6B21A8">✓ JSON Schema Adapter</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="180" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#6B21A8">✓ Truthful Fallback</text>
+
+          <rect x="190" width="185" height="24" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+          <text x="200" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#15803D">✓ 14 Unit Tests (100%)</text>
+        </g>
+
+        <!-- Code Pill -->
+        <g transform="translate(0, 126)">
+          <rect width="480" height="26" rx="6" fill="#F1F5F9"/>
+          <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="11" fill="#334155">$ python task4_chatbot/chatbot.py --query "Stipend"</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Metric Bar -->
+  <g transform="translate(60, 600)">
+    <rect width="1080" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#liShadow)"/>
+    
+    <g transform="translate(24, 16)">
+      <circle cx="8" cy="10" r="5" fill="#10B981"/>
+      <text x="20" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#0F172A">58 / 58 UNIT TESTS PASSING</text>
+    </g>
+
+    <g transform="translate(300, 16)">
+      <circle cx="8" cy="10" r="5" fill="#3B82F6"/>
+      <text x="20" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#334155">ZERO EXTERNAL DEPENDENCIES</text>
+    </g>
+
+    <g transform="translate(615, 16)">
+      <circle cx="8" cy="10" r="5" fill="#8B5CF6"/>
+      <text x="20" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#334155">CLIENT-SIDE WEB DASHBOARD</text>
+    </g>
+
+    <g transform="translate(900, 16)">
+      <circle cx="8" cy="10" r="5" fill="#F59E0B"/>
+      <text x="20" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#334155">MIT OPEN SOURCE</text>
+    </g>
+  </g>
+</svg>

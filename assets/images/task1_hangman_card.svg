@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440">
+  <defs>
+    <linearGradient id="t1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F0F9FF"/>
+    </linearGradient>
+    <filter id="t1Shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284C7" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="440" rx="18" fill="url(#t1Bg)"/>
+  <rect width="1000" height="440" rx="18" fill="none" stroke="#BAE6FD" stroke-width="2"/>
+  <rect x="0" y="0" width="1000" height="6" fill="#0284C7"/>
+
+  <!-- Left: Visual Mockup Container -->
+  <g transform="translate(40, 36)" filter="url(#t1Shadow)">
+    <rect width="400" height="368" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="400" height="36" rx="14" fill="#F8FAFC"/>
+    <circle cx="24" cy="18" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="18" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="18" r="5" fill="#10B981"/>
+    <text x="80" y="22" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#64748B">hangman_engine.py</text>
+
+    <!-- Gallows ASCII Art Visual -->
+    <g transform="translate(40, 60)">
+      <g stroke="#334155" stroke-width="3" stroke-linecap="round">
+        <line x1="20" y1="180" x2="110" y2="180"/>
+        <line x1="60" y1="180" x2="60" y2="30"/>
+        <line x1="60" y1="30" x2="130" y2="30"/>
+        <line x1="130" y1="30" x2="130" y2="55"/>
+        <!-- Figure -->
+        <circle cx="130" cy="70" r="15" fill="none" stroke="#0284C7" stroke-width="2.5"/>
+        <line x1="130" y1="85" x2="130" y2="125" stroke="#0284C7" stroke-width="2.5"/>
+        <line x1="130" y1="95" x2="105" y2="115" stroke="#0284C7" stroke-width="2.5"/>
+        <line x1="130" y1="95" x2="155" y2="115" stroke="#0284C7" stroke-width="2.5"/>
+        <line x1="130" y1="125" x2="110" y2="155" stroke="#0284C7" stroke-width="2.5"/>
+        <line x1="130" y1="125" x2="150" y2="155" stroke="#0284C7" stroke-width="2.5"/>
+      </g>
+    </g>
+
+    <!-- Word Guess Tiles -->
+    <g transform="translate(220, 90)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#64748B">MYSTERY WORD:</text>
+      <g transform="translate(0, 14)">
+        <g transform="translate(0,0)"><rect width="22" height="30" rx="4" fill="#E0F2FE" stroke="#0284C7"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#0369A1">P</text></g>
+        <g transform="translate(26,0)"><rect width="22" height="30" rx="4" fill="#E0F2FE" stroke="#0284C7"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#0369A1">Y</text></g>
+        <g transform="translate(52,0)"><rect width="22" height="30" rx="4" fill="#E0F2FE" stroke="#0284C7"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#0369A1">T</text></g>
+        <g transform="translate(78,0)"><rect width="22" height="30" rx="4" fill="#E0F2FE" stroke="#0284C7"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#0369A1">H</text></g>
+        <g transform="translate(104,0)"><rect width="22" height="30" rx="4" fill="#F1F5F9" stroke="#CBD5E1"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#64748B">_</text></g>
+        <g transform="translate(130,0)"><rect width="22" height="30" rx="4" fill="#E0F2FE" stroke="#0284C7"/><text x="6" y="21" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#0369A1">N</text></g>
+      </g>
+
+      <text x="0" y="75" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#64748B">MISTAKES REMAINING:</text>
+      <g transform="translate(0, 85)">
+        <circle cx="10" cy="8" r="7" fill="#0284C7"/>
+        <circle cx="28" cy="8" r="7" fill="#0284C7"/>
+        <circle cx="46" cy="8" r="7" fill="#0284C7"/>
+        <circle cx="64" cy="8" r="7" fill="#0284C7"/>
+        <circle cx="82" cy="8" r="7" fill="#E2E8F0" stroke="#94A3B8"/>
+        <circle cx="100" cy="8" r="7" fill="#E2E8F0" stroke="#94A3B8"/>
+        <text x="115" y="12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#0284C7">4 / 6</text>
+      </g>
+    </g>
+
+    <!-- Terminal Output Strip -->
+    <g transform="translate(20, 290)">
+      <rect width="360" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">&gt; Guess letter: O</text>
+      <text x="12" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0284C7">&gt; Splendid! 'O' is in the word! (Status: VICTORY)</text>
+    </g>
+  </g>
+
+  <!-- Right: Architecture & Features -->
+  <g transform="translate(470, 36)">
+    <g>
+      <rect width="90" height="26" rx="6" fill="#E0F2FE"/>
+      <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#0369A1">MODULE 01</text>
+      <text x="102" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="900" fill="#0F172A">Hangman Console Game</text>
+    </g>
+
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#475569">
+      An isolated finite-state engine providing interactive word-guessing gameplay with deterministic input sanitization and zero-penalty deduplication.
+    </text>
+
+    <!-- Spec List -->
+    <g transform="translate(0, 95)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">
+      <g transform="translate(0, 0)">
+        <rect width="24" height="24" rx="12" fill="#E0F2FE"/>
+        <text x="7" y="16" font-weight="800" fill="#0284C7">1</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Finite-State Lifecycle:</text>
+        <text x="195" y="16" fill="#64748B">Active, Victory, Defeat with 7 ASCII stages</text>
+      </g>
+
+      <g transform="translate(0, 40)">
+        <rect width="24" height="24" rx="12" fill="#E0F2FE"/>
+        <text x="7" y="16" font-weight="800" fill="#0284C7">2</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Input Validation Sanitizer:</text>
+        <text x="215" y="16" fill="#64748B">Strips whitespace, rejects punctuation/digits</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <rect width="24" height="24" rx="12" fill="#E0F2FE"/>
+        <text x="7" y="16" font-weight="800" fill="#0284C7">3</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Word Corpus Integration:</text>
+        <text x="215" y="16" fill="#64748B">8,076 verified words with offline fallback</text>
+      </g>
+
+      <g transform="translate(0, 120)">
+        <rect width="24" height="24" rx="12" fill="#DCFCE7"/>
+        <text x="7" y="16" font-weight="800" fill="#15803D">✓</text>
+        <text x="36" y="16" font-weight="700" fill="#15803D">18 Automated Unit Tests:</text>
+        <text x="215" y="16" fill="#166534">100% Passing in 0.089s (unittest)</text>
+      </g>
+    </g>
+
+    <!-- Terminal Command Snippet -->
+    <g transform="translate(0, 275)">
+      <rect width="490" height="85" rx="10" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+      <rect width="490" height="26" rx="10" fill="#F0F9FF"/>
+      <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#0284C7">TERMINAL LAUNCH COMMAND</text>
+      <text x="14" y="48" font-family="'JetBrains Mono', monospace" font-size="12" fill="#0F172A">$ python task1_hangman/hangman.py</text>
+      <text x="14" y="70" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B"># Or deterministic mode: python task1_hangman/hangman.py --word PYTHON</text>
+    </g>
+  </g>
+</svg>

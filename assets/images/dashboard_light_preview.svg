@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="dashShadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="440" rx="18" fill="url(#dashBg)"/>
+  <rect width="1000" height="440" rx="18" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="0" y="0" width="1000" height="6" fill="#3B82F6"/>
+
+  <!-- Left: Browser Frame Mockup of index.html -->
+  <g transform="translate(40, 36)" filter="url(#dashShadow)">
+    <rect width="400" height="368" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="400" height="36" rx="14" fill="#F8FAFC"/>
+    <circle cx="24" cy="18" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="18" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="18" r="5" fill="#10B981"/>
+    <!-- URL Bar -->
+    <rect x="80" y="8" width="280" height="20" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="92" y="22" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#1D4ED8">https://maheswari9080.github.io/...</text>
+
+    <!-- Webpage Content Simulation -->
+    <g transform="translate(20, 52)">
+      <!-- Top banner strip -->
+      <rect width="360" height="55" rx="8" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800" fill="#0369A1">Datheon Python Internship Portal</text>
+      <text x="14" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#64748B">Client-side static developer documentation &amp; command hub</text>
+
+      <!-- 4 App mini tiles -->
+      <g transform="translate(0, 68)">
+        <rect width="175" height="65" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="10" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#0284C7">01. Hangman Game</text>
+        <text x="10" y="40" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">18 tests • CLI engine</text>
+        <text x="10" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#10B981">● Live View</text>
+
+        <rect x="185" width="175" height="65" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="195" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#059669">02. Portfolio Tracker</text>
+        <text x="195" y="40" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">14 tests • S&amp;P 500</text>
+        <text x="195" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#10B981">● Live View</text>
+      </g>
+
+      <g transform="translate(0, 142)">
+        <rect width="175" height="65" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="10" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#D97706">03. File Organizer</text>
+        <text x="10" y="40" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">12 tests • Dry-run safe</text>
+        <text x="10" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#10B981">● Live View</text>
+
+        <rect x="185" width="175" height="65" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="195" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#7C3AED">04. FAQ Chatbot</text>
+        <text x="195" y="40" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">14 tests • NLP token bag</text>
+        <text x="195" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#10B981">● Live View</text>
+      </g>
+
+      <!-- Bottom Status Pill -->
+      <g transform="translate(0, 220)">
+        <rect width="360" height="30" rx="6" fill="#F1F5F9"/>
+        <text x="12" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#475569">Pure Client-Side • Zero Server Dependency</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Architecture & Features -->
+  <g transform="translate(470, 36)">
+    <g>
+      <rect width="90" height="26" rx="6" fill="#DBEAFE"/>
+      <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#1D4ED8">PORTAL</text>
+      <text x="102" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="900" fill="#0F172A">Universal Web Dashboard</text>
+    </g>
+
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#475569">
+      A zero-server, client-side web portal (index.html) providing interactive terminal helpers, documentation navigation, and test metrics.
+    </text>
+
+    <!-- Spec List -->
+    <g transform="translate(0, 95)" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">
+      <g transform="translate(0, 0)">
+        <rect width="24" height="24" rx="12" fill="#DBEAFE"/>
+        <text x="7" y="16" font-weight="800" fill="#2563EB">1</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">Zero Server Requirement:</text>
+        <text x="215" y="16" fill="#64748B">Runs directly via file:/// or GitHub Pages</text>
+      </g>
+
+      <g transform="translate(0, 40)">
+        <rect width="24" height="24" rx="12" fill="#DBEAFE"/>
+        <text x="7" y="16" font-weight="800" fill="#2563EB">2</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">One-Click Clipboard Helpers:</text>
+        <text x="235" y="16" fill="#64748B">Instantly copy execution &amp; test commands</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <rect width="24" height="24" rx="12" fill="#DBEAFE"/>
+        <text x="7" y="16" font-weight="800" fill="#2563EB">3</text>
+        <text x="36" y="16" font-weight="700" fill="#0F172A">WCAG AA Light Theme Tokens:</text>
+        <text x="245" y="16" fill="#64748B">Accessible contrast, typography, &amp; clean layout</text>
+      </g>
+
+      <g transform="translate(0, 120)">
+        <rect width="24" height="24" rx="12" fill="#DCFCE7"/>
+        <text x="7" y="16" font-weight="800" fill="#15803D">✓</text>
+        <text x="36" y="16" font-weight="700" fill="#15803D">Live GitHub Pages Deployment:</text>
+        <text x="255" y="16" fill="#166534">maheswari9080.github.io</text>
+      </g>
+    </g>
+
+    <!-- Terminal Command Snippet -->
+    <g transform="translate(0, 275)">
+      <rect width="490" height="85" rx="10" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+      <rect width="490" height="26" rx="10" fill="#EFF6FF"/>
+      <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#1D4ED8">BROWSER LAUNCH</text>
+      <text x="14" y="48" font-family="'JetBrains Mono', monospace" font-size="12" fill="#0F172A">Start-Process "index.html"  # PowerShell</text>
+      <text x="14" y="70" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B"># Or open in Google Chrome / Microsoft Edge / Safari</text>
+    </g>
+  </g>
+</svg>

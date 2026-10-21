@@ -6,16 +6,19 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+.hypothesis/
 
 # Virtual Environments
 venv/
 env/
 ENV/
 .venv/
+*.venv
 
-# Environment Variables
+# Environment Variables & Secrets
 .env
 .env.local
+.env.*.local
 
 # IDE and Editor Files
 .vscode/
@@ -24,11 +27,15 @@ ENV/
 *.sublime-workspace
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
 
 # Task-specific temporary / generated files
 task3_file_organizer/logs/*.log
 task3_file_organizer/sandbox_test/
 *.tmp
+*.temp.html
+docs/*.temp.html
 
 # Distribution / Packaging
 dist/
@@ -41,8 +48,15 @@ build/
 .ipynb_checkpoints/
 
 # Coverage and profiling
-.coverage
 *.prof
 
 # Windows-specific
 desktop.ini
+ehthumbs.db
+
+# Ensure tracked image assets are preserved
+!assets/images/*.png
+!assets/images/*.svg
+!linkedin_showcase.png
+!linkedin_showcase.svg
+!image.png
